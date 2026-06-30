@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja Prime | Achadinhos da Shopee</title>
+  <meta name="description" content="Loja Prime: achadinhos, ofertas e produtos selecionados da Shopee." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="brand">
+        <span class="logo">LP</span>
+        <span>Loja Prime</span>
+      </div>
+      <a class="nav-cta" href="#produtos">Ver ofertas</a>
+    </nav>
+
+    <section class="hero-content">
+      <div>
+        <p class="badge">Achadinhos selecionados da Shopee</p>
+        <h1>Ofertas Prime para comprar gastando menos.</h1>
+        <p class="subtitle">Produtos úteis, baratos e escolhidos para você. Clique no produto e compre direto na Shopee.</p>
+        <div class="hero-actions">
+          <a href="#produtos" class="primary-btn">Explorar produtos</a>
+          <a href="#como-funciona" class="secondary-btn">Como funciona</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <span class="tag">Oferta destaque</span>
+        <h2>Produtos atualizados</h2>
+        <p>Troque os links dos botões pelos seus links de afiliado da Shopee.</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="controls" id="produtos">
+      <div>
+        <h2>Produtos em destaque</h2>
+        <p>Use a busca ou escolha uma categoria.</p>
+      </div>
+      <input type="search" id="searchInput" placeholder="Buscar produto..." />
+    </section>
+
+    <section class="categories" aria-label="Categorias">
+      <button class="category active" data-category="todos">Todos</button>
+      <button class="category" data-category="ofertas">Ofertas</button>
+      <button class="category" data-category="eletronicos">Eletrônicos</button>
+      <button class="category" data-category="casa">Casa</button>
+      <button class="category" data-category="moda">Moda</button>
+      <button class="category" data-category="acessorios">Acessórios</button>
+    </section>
+
+    <section class="product-grid" id="productGrid"></section>
+
+    <section class="info" id="como-funciona">
+      <h2>Como funciona?</h2>
+      <p>A Loja Prime mostra produtos selecionados. Ao clicar em “Ver na Shopee”, você será redirecionado para a Shopee pelo link do produto.</p>
+      <p class="affiliate-note">Este site contém links de afiliado. Podemos receber comissão pelas compras realizadas através dos links, sem custo extra para você.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Loja Prime</strong>
+    <span>Achadinhos e ofertas selecionadas.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
